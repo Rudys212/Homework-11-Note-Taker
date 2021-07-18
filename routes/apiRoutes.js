@@ -23,7 +23,6 @@ module.exports = (app) => {
       if (err) throw err;
     });
   });
-  res.send("Notes is now posted");
 
   // DELETE route
 
