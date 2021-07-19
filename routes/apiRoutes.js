@@ -1,8 +1,10 @@
 // require db json???
 const fs = require("fs");
-// const data = "db/db.json";
+// const data = JSON.parse(fs.readFileSync("db/db.json", "utf-8"));
 const util = require("util");
 const fsAsync = util.promisify(fs.readFile);
+// const nodeid = require("node-id");
+const writeFsAsync = util.promisify(fs.writeFile);
 
 module.exports = (app) => {
   // API GET Requests
@@ -17,11 +19,25 @@ module.exports = (app) => {
   // API POST requests
   app.post("/api/notes", (req, res) => {
     let notesEntered = req.body;
-    let notesId = data.length.toString();
-    console.log(notesEntered);
-    fs.writeFileSync("./db/db.json", JSON.stringify(data), (err, data) => {
+
+    fsAsync("./db/db.json", (err, data) => {
       if (err) throw err;
+      entryData = JSON.parse(data);
+      entryData.push({ notesEntered });
+      let entryIdNumber = 1;
+      entryIdNumber.forEach((note, index) => {
+        note.id = entryIdNumber;
+        entryIdNumber++;
+        return entryData;
+      });
+      console.log(entryData);
+
+      dataString = JSON.stringify(entryData);
+      writeFsAsync("./db/db.json", dataString, (err, data) => {
+        if (err) throw err;
+      });
     });
+    res.send("Notes is saved");
   });
 
   // DELETE route
