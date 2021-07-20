@@ -2,12 +2,19 @@
 
 ## **Description**  
 -------------
-A Node.js command-line application that uses express.js to write and save notes. The note data is retrieved from a JSON file. The user would be able to keep track of older note entries and create new ones.
+A Node.js and express.js application to write and save notes. The note data is retrieved from a JSON file. The user would be able to keep track of older note entries and create new ones.
 
  ## **How to Use**
  ---------------
-- The user would start by entering in the command line, ```npm i``` to ensure all the dependencies are installed
-- The user would then be able to run test by doing ```npm test``` in the command line. This helps to keep the code maintainable
+- The user would access the application at the following link: [Deployed App](https://ancient-reaches-66462.herokuapp.com/)
+  
+- The user would start by clicking **Get Started** on the landing page
+  ![Screenshot of the landing page](./public/assets/images/landingPg.png)
+
+- The user would be able to enter the title of the note and the note text in the text box. The note can be saved or a new one can be added with the buttons at the top right corner.
+  
+ ![Screenshot of the note section](./public/assets/images/noteSec.png)
+
 - The user would then start the application with the command ```node index.js```
 - The user would then be prompted to enter the information of the team's manager. Once entered the user will have the option of entering an engineer or intern for the team. They could also select _Done adding team members_ 
 
