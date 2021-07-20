@@ -13,24 +13,8 @@ A Node.js and express.js application to write and save notes. The note data is r
 
 - The user would be able to enter the title of the note and the note text in the text box. The note can be saved or a new one can be added with the buttons at the top right corner.
   
- ![Screenshot of the note section](./public/assets/images/noteSec.png)
+ ![Screenshot of the note saved](./public/assets/images/savedNotes.png)
 
-- The user would then start the application with the command ```node index.js```
-- The user would then be prompted to enter the information of the team's manager. Once entered the user will have the option of entering an engineer or intern for the team. They could also select _Done adding team members_ 
-
-![Screenshot of the manager questions](./assets/images/managerQs.png)
-
-- The user could then enter an engineer next. When done answering, the user can continue to add engineers, intern or select done.
-  
-![Screenshot of the engineer questions](./assets/images/engineerQs.png)
-
-- The user can enter an intern. When done answering, the user can continue to add interns, or select done
-
-  ![Screenshot of the intern questions](./assets/images/internQs.png) 
-
-- When _Done adding team members_ is selected, an HTML webpage containing cards with the entered employee information are created and displayed on the page.
-  
-  ![Screenshot of cards on webpage](./assets/images/cards.png) 
 
 ## **Built With**
 ---------------
@@ -38,6 +22,7 @@ A Node.js and express.js application to write and save notes. The note data is r
 - ![HTML](https://img.shields.io/badge/Built%20with-HTML-green)
 - ![Javascript](https://img.shields.io/badge/Built%20with-Javascrpit-green)
 - ![NodeJS](https://img.shields.io/badge/Built%20with-NodeJS-green)
+- ![ExpressJS](https://img.shields.io/badge/Built%20with-ExpressJS-green)
 
 ## **Contributors**
 --------------------
@@ -71,6 +56,6 @@ SOFTWARE.
 
 ## **Links** 
 ---------------
-- [GitHub Repo](https://github.com/Rudys212/Homework-10-Profile-Generator)
+- [GitHub Repo](https://github.com/Rudys212/Homework-11-Note-Taker)
 
-- [Screencastify Video ](https://drive.google.com/file/d/163roqTZej2kjvcLaCmKFnq-5uG_-Sr7A/view)
+- [Heroku Deployed App](https://ancient-reaches-66462.herokuapp.com/)
