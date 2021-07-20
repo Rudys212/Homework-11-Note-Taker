@@ -13,6 +13,10 @@ A Node.js and express.js application to write and save notes. The note data is r
 
 - The user would be able to enter the title of the note and the note text in the text box. The note can be saved or a new one can be added with the buttons at the top right corner.
   
+  ![Screenshot of the landing page](./public/assets/images/noteSec.png)
+ 
+ - Notes are saved and can be viewed on the left panel 
+
  <img src="./public/assets/images/savedNotes.png" width="125" height="250" alt="screenshot of saved note section">
 
 
