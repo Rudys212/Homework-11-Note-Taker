@@ -17,7 +17,7 @@ A Node.js and express.js application to write and save notes. The note data is r
  
  - Notes are saved and can be viewed on the left panel 
 
- <img src="./public/assets/images/savedNotes.png" width="125" height="250" alt="screenshot of saved note section">
+  ![GIF of note entry](./public/assets/images/noteEntry.gif)
 
 
 ## **Built With**
